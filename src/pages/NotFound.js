@@ -1,17 +1,12 @@
+import { Link } from "react-router-dom";
+
 const NotFound = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        height: "100vh",
-        justifyContent: "center",
-        alignItems: "center",
-        fontSize: "40px",
-        fontWeight: "bold",
-        textAlign: "center",
-      }}
-    >
-      <h1>404 NOT FOUND</h1>
+    <div className="not-found">
+      <h1 className="title-not-found">404 NOT FOUND</h1>
+      <h4>
+        <Link to="/">Back to Home</Link>
+      </h4>
     </div>
   );
 };

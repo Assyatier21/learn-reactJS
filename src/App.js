@@ -3,6 +3,7 @@ import NavbarOwn from "./components/NavbarOwn";
 import Home from "./pages/Home";
 import Create from "./pages/Create";
 import NotFound from "./pages/NotFound";
+import Blogdetails from "./components/Blogdetails";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
             </Route>
             <Route exact path="/create">
               <Create />
+            </Route>
+            <Route exact path="/blogs/:id">
+              <Blogdetails />
             </Route>
             <Route exact path="*">
               <NotFound />
